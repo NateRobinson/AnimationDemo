@@ -8,10 +8,10 @@ import android.transition.Explode;
 import android.transition.Fade;
 import android.transition.Slide;
 import android.transition.Transition;
+import android.transition.Visibility;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.Window;
-import android.view.animation.BounceInterpolator;
 import android.view.animation.DecelerateInterpolator;
 
 import com.arcblock.animationdemo.R;
@@ -40,27 +40,38 @@ public class TxsTwoActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Transition-Slide-Two");
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            // 进入动画
             Transition transition = null;
             switch (type) {
                 case "Slide":
                     transition = new Slide(Gravity.LEFT);
                     transition.setDuration(500);
-                    transition.setInterpolator(new BounceInterpolator());
+                    ((Slide)transition).setMode(Visibility.MODE_IN);
+                    transition.setInterpolator(new DecelerateInterpolator());
                     break;
                 case "Explode":
                     transition = new Explode();
                     transition.setDuration(500);
+                    ((Explode)transition).setMode(Visibility.MODE_IN);
                     transition.setInterpolator(new DecelerateInterpolator());
                     break;
                 case "Fade":
                     transition = new Fade();
                     transition.setDuration(500);
+                    ((Fade)transition).setMode(Visibility.MODE_IN);
                     transition.setInterpolator(new DecelerateInterpolator());
                     break;
             }
             if (transition != null) {
                 getWindow().setEnterTransition(transition);
             }
+
+            // 退出动画
+            Slide slide = new Slide(Gravity.LEFT);
+            slide.setDuration(500);
+            slide.setMode(Visibility.MODE_OUT);
+            slide.setInterpolator(new DecelerateInterpolator());
+            getWindow().setReturnTransition(slide);
         }
     }
 
