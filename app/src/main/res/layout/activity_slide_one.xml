@@ -13,14 +13,14 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/txs_ani_btn"
+            android:id="@+id/go_to_next_btn"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/custom_btn_bg"
-            android:text="Txs Animations"
+            android:text="Go To Next Page"
             android:textAllCaps="false"
             android:textColor="@color/color_ffffff"/>
     </LinearLayout>
