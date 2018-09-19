@@ -15,7 +15,7 @@ import com.blankj.utilcode.util.ActivityUtils;
 /**
  * Created by Nate on 2018/9/19
  **/
-public class SlideOneActivity extends AppCompatActivity {
+public class TxsOneActivity extends AppCompatActivity {
 
     private String type = "";
 
@@ -37,11 +37,11 @@ public class SlideOneActivity extends AppCompatActivity {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
                     Bundle bundle = new Bundle();
                     bundle.putString("type", type);
-                    Intent intent = new Intent(SlideOneActivity.this, SlideTwoActivity.class);
+                    Intent intent = new Intent(TxsOneActivity.this, TxsTwoActivity.class);
                     intent.putExtras(bundle);
-                    startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(SlideOneActivity.this).toBundle());
+                    startActivity(intent, ActivityOptionsCompat.makeSceneTransitionAnimation(TxsOneActivity.this).toBundle());
                 } else {
-                    ActivityUtils.startActivity(SlideTwoActivity.class);
+                    ActivityUtils.startActivity(TxsTwoActivity.class);
                 }
             }
         });

@@ -11,7 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.arcblock.animationdemo.R;
-import com.arcblock.animationdemo.ui.txs.slide.SlideOneActivity;
+import com.arcblock.animationdemo.ui.txs.slide.TxsOneActivity;
 
 /**
  * Created by Nate on 2018/9/19
@@ -36,7 +36,7 @@ public class TxsAnimationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
                 bundle.putString("type", currentType);
-                Intent intent = new Intent(TxsAnimationActivity.this, SlideOneActivity.class);
+                Intent intent = new Intent(TxsAnimationActivity.this, TxsOneActivity.class);
                 intent.putExtras(bundle);
                 startActivity(intent);
             }

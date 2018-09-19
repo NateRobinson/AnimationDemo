@@ -19,7 +19,7 @@ import com.arcblock.animationdemo.R;
 /**
  * Created by Nate on 2018/9/19
  **/
-public class SlideTwoActivity extends AppCompatActivity {
+public class TxsTwoActivity extends AppCompatActivity {
 
     private String type = "";
     private static final String[] types = {"Slide", "Explode", "Fade"};

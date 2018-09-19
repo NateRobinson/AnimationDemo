@@ -25,11 +25,11 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
         <activity
-            android:name=".ui.txs.slide.SlideOneActivity"
+            android:name=".ui.txs.slide.TxsOneActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
         <activity
-            android:name=".ui.txs.slide.SlideTwoActivity"
+            android:name=".ui.txs.slide.TxsTwoActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
     </application>
