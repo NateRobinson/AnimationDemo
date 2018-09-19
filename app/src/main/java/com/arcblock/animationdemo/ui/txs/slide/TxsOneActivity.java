@@ -36,12 +36,17 @@ public class TxsOneActivity extends AppCompatActivity {
         getSupportActionBar().setTitle("Transition-Slide-One");
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setAllowEnterTransitionOverlap(false);
+            getWindow().setAllowReturnTransitionOverlap(false);
+
             // 从 one 进入 two 页面， one 页面的动画
             Slide transition = null;
             transition = new Slide(Gravity.LEFT);
+            transition.setDuration(5000);
             transition.setInterpolator(new DecelerateInterpolator());
             transition.setMode(Visibility.MODE_OUT);
             getWindow().setExitTransition(transition);
+
         }
 
         findViewById(R.id.go_to_next_btn).setOnClickListener(new View.OnClickListener() {

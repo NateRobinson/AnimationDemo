@@ -13,6 +13,7 @@ import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.animation.DecelerateInterpolator;
+import android.widget.LinearLayout;
 
 import com.arcblock.animationdemo.R;
 
@@ -23,6 +24,7 @@ public class TxsTwoActivity extends AppCompatActivity {
 
     private String type = "";
     private static final String[] types = {"Slide", "Explode", "Fade"};
+    private LinearLayout target_ll;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,30 +41,33 @@ public class TxsTwoActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Transition-Slide-Two");
 
+        target_ll = findViewById(R.id.target_ll);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setAllowEnterTransitionOverlap(false);
+            getWindow().setAllowReturnTransitionOverlap(false);
             // 进入动画
             Transition transition = null;
             switch (type) {
                 case "Slide":
                     transition = new Slide(Gravity.LEFT);
-                    transition.setDuration(500);
-                    ((Slide)transition).setMode(Visibility.MODE_IN);
+                    ((Slide) transition).setMode(Visibility.MODE_IN);
                     transition.setInterpolator(new DecelerateInterpolator());
                     break;
                 case "Explode":
                     transition = new Explode();
-                    transition.setDuration(500);
-                    ((Explode)transition).setMode(Visibility.MODE_IN);
+                    ((Explode) transition).setMode(Visibility.MODE_IN);
                     transition.setInterpolator(new DecelerateInterpolator());
                     break;
                 case "Fade":
                     transition = new Fade();
-                    transition.setDuration(500);
-                    ((Fade)transition).setMode(Visibility.MODE_IN);
+                    ((Fade) transition).setMode(Visibility.MODE_IN);
                     transition.setInterpolator(new DecelerateInterpolator());
                     break;
             }
             if (transition != null) {
+                //transition.addTarget(target_ll);
+                transition.setDuration(500);
                 getWindow().setEnterTransition(transition);
             }
 
