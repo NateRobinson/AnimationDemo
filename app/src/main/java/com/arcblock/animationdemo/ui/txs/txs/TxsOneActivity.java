@@ -1,4 +1,4 @@
-package com.arcblock.animationdemo.ui.txs.slide;
+package com.arcblock.animationdemo.ui.txs.txs;
 
 import android.content.Intent;
 import android.os.Build;
@@ -42,7 +42,7 @@ public class TxsOneActivity extends AppCompatActivity {
             // 从 one 进入 two 页面， one 页面的动画
             Slide transition = null;
             transition = new Slide(Gravity.LEFT);
-            transition.setDuration(5000);
+            transition.setDuration(500);
             transition.setInterpolator(new DecelerateInterpolator());
             transition.setMode(Visibility.MODE_OUT);
             getWindow().setExitTransition(transition);

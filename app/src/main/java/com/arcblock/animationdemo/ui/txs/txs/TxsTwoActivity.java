@@ -1,4 +1,4 @@
-package com.arcblock.animationdemo.ui.txs.slide;
+package com.arcblock.animationdemo.ui.txs.txs;
 
 import android.os.Build;
 import android.os.Bundle;

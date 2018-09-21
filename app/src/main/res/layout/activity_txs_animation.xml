@@ -12,6 +12,17 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#bdbcbc"
+            android:text="Txs Animation"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="match_parent"
@@ -21,7 +32,7 @@
             android:layout_marginTop="15dp"/>
 
         <Button
-            android:id="@+id/slide_btn"
+            android:id="@+id/txs_btn"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginLeft="20dp"
@@ -31,6 +42,43 @@
             android:text="Try Tx Animations"
             android:textAllCaps="false"
             android:textColor="@color/color_ffffff"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="#bdbcbc"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#bdbcbc"
+            android:text="Share Elements Animation"
+            android:textColor="@color/color_ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/share_elements_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_btn_bg"
+            android:text="Try Share Elements Animations"
+            android:textAllCaps="false"
+            android:textColor="@color/color_ffffff"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="#bdbcbc"/>
     </LinearLayout>
 
 

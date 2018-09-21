@@ -11,7 +11,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.arcblock.animationdemo.R;
-import com.arcblock.animationdemo.ui.txs.slide.TxsOneActivity;
+import com.arcblock.animationdemo.ui.txs.shareelement.ShareElementOneActivity;
+import com.arcblock.animationdemo.ui.txs.txs.TxsOneActivity;
 
 /**
  * Created by Nate on 2018/9/19
@@ -31,13 +32,21 @@ public class TxsAnimationActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Transition Animation");
 
-        findViewById(R.id.slide_btn).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.txs_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
                 bundle.putString("type", currentType);
                 Intent intent = new Intent(TxsAnimationActivity.this, TxsOneActivity.class);
                 intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.share_elements_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TxsAnimationActivity.this, ShareElementOneActivity.class);
                 startActivity(intent);
             }
         });
