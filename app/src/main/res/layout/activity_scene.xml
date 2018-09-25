@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  android:orientation="vertical">
+
+	<FrameLayout
+		android:id="@+id/scene_root_fl"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1">
+
+
+		<include layout="@layout/scene_one"/>
+	</FrameLayout>
+
+	<Button
+		android:id="@+id/change_btn"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:layout_marginBottom="20dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:layout_marginTop="15dp"
+		android:background="@drawable/custom_btn_bg"
+		android:text="Change Scene"
+		android:textAllCaps="false"
+		android:textColor="@color/color_ffffff"/>
+
+</LinearLayout>

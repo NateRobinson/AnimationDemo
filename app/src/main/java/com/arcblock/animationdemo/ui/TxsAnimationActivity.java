@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.arcblock.animationdemo.R;
+import com.arcblock.animationdemo.ui.txs.scene.SceneOneActivity;
 import com.arcblock.animationdemo.ui.txs.shareelement.ShareElementOneActivity;
 import com.arcblock.animationdemo.ui.txs.txs.TxsOneActivity;
 
@@ -47,6 +48,14 @@ public class TxsAnimationActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(TxsAnimationActivity.this, ShareElementOneActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.scene_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TxsAnimationActivity.this, SceneOneActivity.class);
                 startActivity(intent);
             }
         });

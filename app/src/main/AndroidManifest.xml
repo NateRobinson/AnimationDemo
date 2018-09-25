@@ -37,6 +37,10 @@
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
         <activity
+            android:name=".ui.txs.scene.SceneOneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity
             android:theme="@style/ToolBarAppTheme"
             android:name=".ui.txs.shareelement.ShareElementTwoActivity"
             android:screenOrientation="portrait"
