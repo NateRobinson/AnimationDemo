@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.arcblock.animationdemo.R;
 import com.arcblock.animationdemo.ui.rcv.CustomLayoutManagerActivity;
+import com.arcblock.animationdemo.ui.rcv.CustomSnapHelperActivity;
 import com.blankj.utilcode.util.ActivityUtils;
 
 public class RecyclerViewRelatedActivity extends AppCompatActivity {
@@ -24,6 +25,12 @@ public class RecyclerViewRelatedActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ActivityUtils.startActivity(CustomLayoutManagerActivity.class);
+            }
+        });
+        findViewById(R.id.snap_helper_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ActivityUtils.startActivity(CustomSnapHelperActivity.class);
             }
         });
     }

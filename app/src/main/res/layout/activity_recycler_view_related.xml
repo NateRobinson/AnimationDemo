@@ -48,20 +48,20 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:background="#bdbcbc"
-            android:text="Scene"
+            android:text="Custom SnapHelper"
             android:textColor="@color/color_ffffff"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
         <Button
-            android:id="@+id/scene_btn"
+            android:id="@+id/snap_helper_btn"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="15dp"
             android:background="@drawable/custom_btn_bg"
-            android:text="Try Scene"
+            android:text="Try Custom SnapHelper"
             android:textAllCaps="false"
             android:textColor="@color/color_ffffff"/>
 
