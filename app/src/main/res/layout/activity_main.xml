@@ -23,6 +23,18 @@
             android:text="Txs Animations"
             android:textAllCaps="false"
             android:textColor="@color/color_ffffff"/>
+
+        <Button
+            android:id="@+id/recycler_view_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_btn_bg"
+            android:text="RecyclerView Related"
+            android:textAllCaps="false"
+            android:textColor="@color/color_ffffff"/>
     </LinearLayout>
 
 

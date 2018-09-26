@@ -23,5 +23,12 @@ public class MainActivity extends AppCompatActivity {
                 ActivityUtils.startActivity(TxsAnimationActivity.class);
             }
         });
+
+        findViewById(R.id.recycler_view_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ActivityUtils.startActivity(RecyclerViewRelatedActivity.class);
+            }
+        });
     }
 }
